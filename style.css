@@ -1,0 +1,122 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-image: url(imagem/bg-repeat.jpg);
+    background-repeat: repeat;
+    display: grid;
+    width: 800px;
+    height: 402px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid: "lado-esquerdo lado-direito" /50% 50%
+}
+
+.lado-esquerdo {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    grid-area: lado-esquerdo;
+}
+
+.lado-esquerdo .titulo {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 23.44px;
+    text-align: left;
+
+}
+
+.lado-esquerdo p {
+    margin-top: 11px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.58px;
+    text-align: left;
+}
+
+.lado-direito {
+    grid-area: lado-direito;
+}
+
+.lado-direito {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 12px 50px 12px 10px;
+    padding: 20px;
+    height: 378px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo-obrigatorio {
+    color: red;
+    font-family: Roboto;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.38px;
+    margin-bottom: 5px;
+}
+
+.campo-obrigatorio.vazio {
+    opacity: 0;
+}
+
+
+.vazio:last-child {
+    margin: 0;
+}
+
+.lista-de-input {
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.58px;
+    text-align: left;
+}
+
+.input-de-mensagem {
+    height: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.botao {
+    width: 298.01px;
+    height: 41.13px;
+    top: 489px;
+    left: 19px;
+    color: white;
+    background-color: rgba(60, 204, 135, 1);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.58px;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(168, 168, 168, 1);
+}
+
+.lista-de-input.borda-vermelha{
+    border: red solid 2px;
+}
+.lista-de-input.borda-verde{
+    border: rgba(0, 194, 43, 1) solid 2px;
+}

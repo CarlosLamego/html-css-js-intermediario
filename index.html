@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro e Validação</title>
+</head>
+<body>
+    <main>
+        <div class="lado-esquerdo">
+            <h2 class="titulo">FICOU COM DÚVIDA?</h2>
+            <h2 class="titulo">NOS MANDE UMA MENSAGEM!</h2>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+        <div class="lado-direito">
+            <form action="index.html" method="get" enctype="multipart/form-data" class="formulario">
+                <input type="text" name="nome" id="nome" class="lista-de-input campo-do-nome" placeholder="Nome completo *" required>
+                <p class="campo-obrigatorio vazio campo-do-nome">campo obrigatório</p>
+                <input type="text"  class="lista-de-input  campo-do-email" name="email" id="email" placeholder="Email *" required>
+                <p class="campo-obrigatorio vazio campo-do-email">campo obrigatório</p>
+                <input type="text" name="telefone" id="telefone"  class="lista-de-input campo-do-telefone" placeholder="Telefone *" required>
+                <p class="campo-obrigatorio vazio campo-do-telefone">campo obrigatório</p>
+                <input type="text" name="mensagem" id="mensagem"  class="lista-de-input input-de-mensagem campo-da-mensagem" placeholder="Mensagem *" required>
+                <p class="campo-obrigatorio vazio campo-da-mensagem">campo obrigatório</p>
+            </form>
+            <p class="p-do-direito">*campos obrigatórios</p>
+            <button class="botao" id="botao">Enviar</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
